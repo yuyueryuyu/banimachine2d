@@ -3,4 +3,13 @@ name = "bevimator2d"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+proc-macro = true
+
 [dependencies]
+bevy = { version = "0.16.1" , features = ["serialize"] }
+bevy_kira_audio = { version = "0.23.0", features = [ "mp3", "wav" ]}
+serde = "1.0.219"
+proc-macro2 = "1.0.95"
+quote = "1.0.40"
+syn = { version = "2.0", features = ["full"] }
